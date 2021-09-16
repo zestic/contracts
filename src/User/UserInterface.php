@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Zestic\Contracts\User;
 
-use Mezzio\Authentication\UserInterface as MezzioInterface;
-
-interface UserInterface extends MezzioInterface
+interface UserInterface
 {
-    public function getPersonId();
+    public function getId();
 }

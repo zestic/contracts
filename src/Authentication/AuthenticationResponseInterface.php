@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Zestic\Contracts\Authentication;
 
-use Zestic\Contracts\Person\PersonInterface;
+use Zestic\Contracts\User\UserInterface;
 
 interface AuthenticationResponseInterface
 {
-    public function response(PersonInterface $person, string $jwt, int $expiresAt): array;
+    public function response(UserInterface $user, string $jwt, int $expiresAt): array;
 }
